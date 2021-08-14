@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="/css1/index.css">
+    <style>
+        body{
+          
+           line-height: 1.5;
+        }
+        .input{
+            display: inline-block;
+        }
+        #reqired-field::after{
+            content: "*";
+            color: red;
+
+        }
+        .text-size{
+            width: 550px;
+            height: 150px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(192, 196, 192);
+        }
+    </style>
+   
+    
+</head>
+
+<body>
+    
+        <div id = "reqired-field" ><b>Name</b></div>
+        <form class = "input" action="name" >
+            <label for="name" ></label>
+            <input type="text" name="name" size="23" >&nbsp;
+            <input type="text" name = "name"size="23">
+        </form>
+        <div id = "reqired-field" ><b>Email</b></div>
+        <form class = "input" action="email" >
+            <label for="email" ></label>
+            <input type="email" name="email" size="53">
+        </form>
+        <div id="reqired-field"><b>Your Experience</b></div>
+        <form method="post" action="#action-url">  
+            
+              <input type="radio" name="rating1" value="1"><i></i>
+              <input type="radio" name="rating1" value="2"><i></i>
+              <input type="radio" name="rating1" value="3"><i></i>
+              <input type="radio" name="rating1" value="4"><i></i>
+              <input type="radio" name="rating1" value="5"><i></i>
+           
+        </form>
+
+        <div>Overall, how would you rate your experience with us?</div>
+        <div id="reqired-field"><b>How satisfied are you with</b></div>
+        <table class = "table1">
+            <tr>
+                <td>&nbsp;</td>
+                <td>Very Unsatisfied</td>
+                <td>Unsatisfied</td>
+                <td>Neutral</td>
+                <td>Satisfied</td>
+                <td>Very Satisfied</td>
+            </tr>
+            <tr> 
+                <td >Purchase</td>
+                
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+            </tr>
+            <tr> 
+                <td>Service</td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+            </tr>
+            <tr> 
+                <td>Company Overall</td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+            </tr>
+        </table>
+        <div id="reqired-field"><b>How likely are you to</b></div>
+        <table class="table1">
+            <tr>
+                <td>&nbsp;</td>
+                <td>Very Unlikely</td>
+                <td>Unlikely</td>
+                <td>Neutral</td>
+                <td>likely</td>
+                <td>Very Likely</td>
+            </tr>
+            <tr>
+                <td>Buy from us again</td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+
+            </tr>
+            <tr>
+                <td>Recomend our product to others</td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>Recomend our company to others</td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+                <td style="text-align: center;"><input type="radio"></td>
+            </tr>
+        </table>
+        <div><b>Additional comments or suggestions</b></div>
+        <textarea class = "text-size"></textarea></br>
+        <input type="submit">
+
+   
+   
+</body>
+
+</html>
